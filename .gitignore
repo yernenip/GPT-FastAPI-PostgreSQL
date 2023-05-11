@@ -1,0 +1,4 @@
+#Environment
+.env
+references.txt
+__pycache__

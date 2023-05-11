@@ -1,0 +1,34 @@
+
+Prompt 1
+============
+
+Your task is to generate SQL scripts for postgreSQL for an ecommerce database. The scenarios are shared below delimted by three stars.
+
+Here are some rules to follow
+1. The database should be named "CommerceDB".
+2. Before creating any SQL objects, ensure they do not already exist to handle errors better.
+3. Verify that the SQL object does not exist before creating it for better error handling
+4. Each primary key fields should have auto-increment enabled, starting from a seed value of 100.
+
+***
+Products can be uniquely identified by a product id or a SKU Number.
+Products can belong to one or more categories.
+Products can have multiple variants, such as size and color, but there could be other variants as well.
+Customers can place orders for any number of items.
+An order can contain one or more items.
+An order should have order amount, shipping amount, tax amount and total.
+Once an order is shipped, it can be tracked via a shipment.
+***
+
+
+Prompt 2
+============
+I do not see the script related to auto-increment. How will that work?
+
+
+Prompt 3
+==========
+Based on the tables generated above, create Insert scripts for all the tables. Ensure the following rules are followed.
+1. Remember that the primary key is auto incremented in these tables with a seed value of 100.
+2. Maintain referential integrity.
+3. Generate random tracking numbers for shipments.
