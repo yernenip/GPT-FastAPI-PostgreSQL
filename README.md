@@ -1,6 +1,7 @@
 # Blog Code: Automating Backend Development with ChatGPT, FastAPI, and PostgreSQL
 
 This repository contains code generated in reference to a blog where I used ChatGPT to generate SQL scripts and develop Backend API services. The code is written to run in PostgreSQL and utilizes FastAPI, psycopg3, and pydantic packages.
+Blog article can be found @ https://medium.com/@yernenip/automating-backend-development-with-chatgpt-fastapi-and-postgresql-4d28d6b1e8bb
 
 ## API Services
 
@@ -25,6 +26,11 @@ To deploy the code, please follow the steps below:
 2. Make sure you have the latest version of Docker installed and running on your machine.
 3. Open a terminal or command prompt in the project directory.
 4. Run the `deploy.ps1` script if you're using Windows.
+5. Connect to the PostgreSQL using the environment variables provided in .env file.
+    a. You can connect via shell or pgAdmin (my preference)
+    b. Once connected, run the SQL script "insert-reference-data.sql". You can find this under the "database" folder.
+    c. I did not run this script to ensure referential integrity is maintained. 
+    d. You may need to run SELECT queries to ensure the generated ID's in main tables are matching.
 
 The deployment script will set up the necessary Docker containers and configure the environment for the Backend API services.
 
@@ -35,7 +41,7 @@ The deployment script will set up the necessary Docker containers and configure 
 To run the code locally, you will need the following:
 
 - Python 3.7 or above
-- PostgreSQL database
+- pgAdmin 4 (for running SQL scripts) or connect to psql shell.
 - Docker (for deployment)
 
 
