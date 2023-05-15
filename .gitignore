@@ -1,4 +1,8 @@
 #Environment
-.env
 references.txt
 __pycache__
+
+#Scripts
+docker-cleanup.ps1
+deploy-postgres.ps1
+deploy-api.ps1

@@ -1,0 +1,30 @@
+
+Create Dockerfile for PostgreSQL deployment
+=============================================
+Create a docker file to deploy PostgreSQL and run scripts on it to create tables. 
+1. Set environment variables
+2. Start PostgreSQL and execute SQL scripts within dockerfile
+
+
+
+Create Dockerfile for FastAPI deployment
+==================================================
+Your task is to create a dockerfile for deploying a FastAPI application. Here are some instructions to follow
+1. App has dependencies on fastapi, uvicorn, pydantic, psycopg[binary,pool], python-dotenv. These can be encapsulated in a requirements file.
+2. The api version is v1.
+
+
+
+Finally create the docker compose file to automate deployment of both containers
+==================================================================================
+You are a DevOps Engineer and your task is to create a docker compose file that will be used to deploy two containers as described below. 
+Important to note that the dockerfile for both the containers is already created and in respective sub folders.
+Use version 3.8 for docker compose
+1. The first container is for a database server running on PostgreSQL.
+   --This container will be called commerceserver
+   --Ports to be used are 5432 for both host and container.
+2. The second container is for backend services developed using FastAPI. 
+  --This container has a dependency on the database server.
+  --The environment variables are stored in a .env file.
+  --This container will be called as commerceapi.
+   --Ports to be used are 8000 for both host and container.

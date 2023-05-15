@@ -1,6 +1,6 @@
 from fastapi import FastAPI, HTTPException
 from typing import List
-from models import Product, Category, Variant
+from models import Product, Variant
 from db import open_pool, close_pool, exec_query
 
 app = FastAPI()

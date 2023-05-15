@@ -1,11 +1,11 @@
 -- Insert into Products_Categories
 INSERT INTO Products_Categories (product_id, category_id)
-VALUES (100, 101),
-       (100, 102),
-       (101, 101),
-       (102, 103),
-       (103, 102),
-       (103, 103);
+VALUES (100, 100),
+       (100, 101),
+       (101, 100),
+       (102, 102),
+       (103, 101),
+       (103, 102);
 
 -- Insert into Products_Variants
 INSERT INTO Products_Variants (product_id, variant_id)
@@ -14,8 +14,8 @@ VALUES (100, 100),
        (101, 100),
        (102, 101),
        (102, 102),
-       (103, 102),
-       (103, 103);
+       (103, 101),
+       (103, 102);
 
 -- Insert into Orders
 INSERT INTO Orders (customer_id, order_amount, shipping_amount, tax_amount, total)
